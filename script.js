@@ -97,6 +97,8 @@ function matrizRevisar(){
                     return true
             }
         }
+        colorRed = 0
+        colorBlue = 0
 }
 
     //fin vertical
@@ -122,6 +124,8 @@ function matrizRevisar(){
                     return true
             }
         }
+        colorRed = 0
+        colorBlue = 0
     }
     for (var i=0;i<matriz.length;i++) {
         for (var j=0;j<matriz.length-i;j++) {
@@ -143,6 +147,8 @@ function matrizRevisar(){
                     return true
             }
         }
+        colorRed = 0
+        colorBlue = 0
     }
     //fin diagonal abajo izquierda a derecha arriba
 
@@ -166,6 +172,8 @@ function matrizRevisar(){
                     return true
             }
         }
+        colorRed = 0
+        colorBlue = 0
     }
     for (var i=0;i<matriz.length;i++) {
         for (var j=0;j<matriz.length-i;j++) {
@@ -187,6 +195,8 @@ function matrizRevisar(){
                     return true
             }
         }
+        colorRed = 0
+        colorBlue = 0
     }
 }
 
@@ -194,8 +204,6 @@ function bajarColor(id, color){
     //horizontal
     y = parseInt(id)-1
     for (x=matriz.length-1;x>=0;x--) {
-        // console.log(x, y)
-        // console.log(matriz[x][y])
         if(document.getElementById(matriz[x][y]).style.background != "red" &&
             document.getElementById(matriz[x][y]).style.background != "blue"){
                 document.getElementById(matriz[x][y]).style.background = color
