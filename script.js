@@ -30,6 +30,7 @@ const clickButton = function () {
         document.getElementById("player").innerHTML = `Turno de ${player1}`
         }
     if(matrizRevisar()== true){
+        document.getElementById("player").innerHTML = `Game Over`
         return 
     }
     turno ++
